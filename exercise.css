@@ -58,3 +58,32 @@
     transform: scale(150%);
     transition: 2s, filter 2s, transform 1s;
 }
+
+.ex-10-icon{
+    animation: perpetual-rotation 2s infinite linear;    
+}
+.ex-11-icon:hover{
+    animation: perpetual-rotation-3-4 2s infinite ease-out;    
+}
+
+@keyframes perpetual-rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes perpetual-rotation-3-4{
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(270deg);  /*Questo sembra geniale ma e' venuto a chulo...poi ci ho riflettuto e puo' aver senso*/
+    }
+}
+
+.ex-10-icon{
+    animation: perpetual-rotation 2s infinite linear;    
+}
