@@ -84,6 +84,38 @@
     }
 }
 
-.ex-10-icon{
-    animation: perpetual-rotation 2s infinite linear;    
+.ex-12-top-white{
+    animation: translation-top 2s infinite linear;    
+}
+
+@keyframes translation-top{
+    0% {
+       top: 0; 
+       right: 20%; 
+    }
+    
+    25% {
+        top: 0
+        right: calc(100% - 60px);  
+    }
+
+    50% {
+        top: calc(100% - 20px) ;
+        right: calc(100% - 60px);  
+          
+    }
+
+    75% {
+        right: calc(100% - 60px);  
+        ;  
+    }
+}
+    100% {
+        right: calc(100% - 60px);  
+        ;  
+    }
+}
+
+.ex-12-bottom-white{
+    animation: translation-bottom 2s infinite linear;
 }
